@@ -1,70 +1,73 @@
-import { Link } from 'react-router';
-import Theme from './Theme';
-import Search from './search';
+import { Link } from "react-router";
+import Theme from "./Theme";
+import Search from "./Search";
 
 function Navbar() {
   return (
-    <div className=' py-1'>
-      <nav className='navbar navbar-expand-lg navbar-dark container'>
+    <div className=" py-1">
+      <nav className="navbar navbar-expand-lg navbar-dark container">
         <Link
-          className='navbar-brand bg-primary px-2 py-1 text-black rounded'
-          style={{ fontWeight: '800' }}
-          to='/'
+          className="navbar-brand bg-primary px-2 py-1 text-black rounded"
+          style={{ fontWeight: "800" }}
+          to="/"
         >
           {`L'MDb`}
         </Link>
 
         <button
-          className='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarNavAltMarkup'
-          aria-controls='navbarNavAltMarkup'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span className='navbar-toggler-icon' />
+          <span className="navbar-toggler-icon" />
         </button>
 
-        <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
-          <div className='d-flex w-100 align-items-center'>
-            <div className='input-group flex-grow-1 me-3' style={{ maxWidth: '75%' }}>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="d-flex w-100 align-items-center">
+            <div
+              className="input-group flex-grow-1 me-3"
+              style={{ maxWidth: "75%" }}
+            >
               <Search />
             </div>
             <div>
               <Link
-                className='btn btn-outline-primary border-2 py-1 px-3 rounded fw-bolder'
-                to='/movies'
+                className="btn btn-outline-primary border-2 py-1 px-3 rounded fw-bolder"
+                to="/movies"
               >
                 MOVIES
               </Link>
             </div>
-            <div className='dropdown ms-3'>
+            <div className="dropdown ms-3">
               <button
-                className='btn btn-primary py-1 px-3 rounded fw-bolder dropdown-toggle'
-                type='button'
-                id='dropdownMenuButton1'
-                data-bs-toggle='dropdown'
-                aria-expanded='false'
+                className="btn btn-primary py-1 px-3 rounded fw-bolder dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 OPTIONS
               </button>
               <ul
-                className='dropdown-menu dropdown-menu-dark'
-                aria-labelledby='dropdownMenuButton1'
+                className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton1"
               >
                 <li>
-                  <Link className='dropdown-item' to='/profile'>
+                  <Link className="dropdown-item" to="/profile">
                     Profile
                   </Link>
                 </li>
                 <li>
-                  <Link className='dropdown-item' to='/settings'>
+                  <Link className="dropdown-item" to="/settings">
                     Settings
                   </Link>
                 </li>
                 <li>
-                  <Link className='dropdown-item' href='#'>
+                  <Link className="dropdown-item" href="#">
                     Logout
                   </Link>
                 </li>
